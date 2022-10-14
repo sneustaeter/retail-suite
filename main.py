@@ -2,6 +2,7 @@
 # Author: Saxon Neustaeter
 # Date: 10/13/2022
 # Description: Basic retail suite written in python
+from admin import *
 import os
 os.system("cls")
 
@@ -24,7 +25,7 @@ def main_menu():
             return "Sales"
             
         case "3":
-            return "Admin"
+            return admin_menu()
             
         case "4":
             return "Reports"
@@ -44,9 +45,7 @@ def inventory_menu():
 def sales_menu():
     print("==================== SALES MENU ====================")
     
-def admin_menu():
-    print("==================== ADMIN MENU ====================")
-    
+
 def reports_menu():
     print("==================== REPORTS MENU ====================")
     
